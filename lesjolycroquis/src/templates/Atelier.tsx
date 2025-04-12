@@ -13,14 +13,17 @@ export default function Atelier() {
           
           {/* Première partie */}
           <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="md:w-1/2 w-full">
+            <div className="md:w-1/2 w-full rounded-2xl border-4 border-[#e0d6cb] shadow-lg overflow-hidden">
               <img
                 src={image}
                 alt="Atelier de dessin"
-                className="rounded-xl shadow-lg object-cover w-full h-auto"
+                className="w-full h-auto object-cover"
               />
             </div>
             <div className="md:w-1/2 w-full text-gray-800 text-xl">
+              <h1 className="text-center text-3xl font-bold text-gray-800 mb-6">L'Atelier</h1>
+              <br/>
+
               <p>
                 Situé tout proche du regroupement scolaire Giraut de Borneil, dans une belle et ancienne demeure d'Excideuil,
                 l'atelier des Joly Croquis s'adresse particulièrement aux enfants et aux jeunes, débutants ou avancés...
@@ -37,11 +40,11 @@ export default function Atelier() {
 
           {/* Deuxième partie */}
           <div className="flex flex-col md:flex-row-reverse items-center gap-8">
-            <div className="md:w-1/2 w-full">
+            <div className="md:w-1/2 w-full rounded-2xl border-4 border-[#e0d6cb] shadow-lg overflow-hidden">
               <img
                 src={image2}
                 alt="Matériel et thématiques"
-                className="rounded-xl shadow-lg object-cover w-full h-auto"
+                className="w-full h-auto object-cover"
               />
             </div>
             <div className="md:w-1/2 w-full text-gray-800 text-xl space-y-4">

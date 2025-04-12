@@ -44,13 +44,16 @@ export default function LesCours() {
           </div>
 
           {/* Image à droite */}
-          <div className="md:w-1/2 w-full flex justify-center items-center">
-            <img
-              src={coursImage}
-              alt="Cours de dessin"
-              className="rounded-xl shadow-lg object-cover w-full h-auto max-h-[600px]"
-            />
-          </div>
+            <div className="md:w-1/2 w-full flex justify-center items-center">
+              <div className="rounded-2xl border-4 border-[#e0d6cb] shadow-md overflow-hidden">
+                <img
+                  src={coursImage}
+                  alt="Cours de dessin"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+
         </div>
       </section>
 
