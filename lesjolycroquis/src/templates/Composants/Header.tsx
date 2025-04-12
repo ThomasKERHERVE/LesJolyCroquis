@@ -5,7 +5,7 @@ export default function Header() {
     { to: "/", label: "Accueil" },
     { to: "/atelier", label: "L'atelier" },
     { to: "/LesCours", label: "Les Cours" },
-    { to: "/stages", label: "Les stages" },
+    { to: "/LesStages", label: "Les stages" },
     { to: "/actualite", label: "L'actualité" },
     { to: "/realisations", label: "Quelques réalisations" },
     { to: "/contact", label: "Contact" },

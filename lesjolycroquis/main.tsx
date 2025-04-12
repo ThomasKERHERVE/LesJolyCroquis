@@ -5,7 +5,7 @@ import './index.css';
 import Accueil from './src/templates/Accueil';
 import LesCours from './src/templates/LesCours';
 import Contact from './src/templates/Contact';
-import LesStages from './src/templates/LesCours';
+import LesStages from './src/templates/LesStages';
 import Actualite from './src/templates/Actualité';
 import Atelier from './src/templates/Atelier';
 import Realisations from './src/templates/Rea';
