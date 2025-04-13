@@ -13,7 +13,7 @@ import AdminRealisations from './src/templates/AdmionRealisation';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename="/lesjolycroquis">
+    <BrowserRouter basename="/LesJolyCroquis">
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/LesCours" element={<LesCours />} />
