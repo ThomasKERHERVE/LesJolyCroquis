@@ -9,6 +9,7 @@ import LesStages from './src/templates/LesStages';
 import Actualite from './src/templates/Actualité';
 import Atelier from './src/templates/Atelier';
 import Realisations from './src/templates/Rea';
+import AdminRealisations from './src/templates/AdmionRealisation';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -21,6 +22,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/Actualite" element={<Actualite />} />
         <Route path="/Atelier" element={<Atelier />} />
         <Route path="/Realisations" element={<Realisations />} />
+        <Route path="/AdminRealisations" element={<AdminRealisations />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
