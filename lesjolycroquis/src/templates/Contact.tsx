@@ -57,12 +57,12 @@ export default function Contact() {
               title="Où nous trouver"
               content={
                 <a
-                  href="https://www.google.com/maps?q=1+rue+du,+24160+Excideuil"
+                  href="https://www.google.com/maps?q=1+rue+du+roc,+24160+Excideuil"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:underline"
                 >
-                  1 rue du, 24160 Excideuil
+                  1 rue du roc, 24160 Excideuil
                 </a>
               }
             />
