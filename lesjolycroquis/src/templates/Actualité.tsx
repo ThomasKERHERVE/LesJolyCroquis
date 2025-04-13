@@ -2,6 +2,8 @@ import Header from './Composants/Header'
 import Footer from './Composants/Footer'
 import image from '../assets/images/Désert.jpg'
 
+import { motion } from "framer-motion";
+
 // Année scolaire dynamique
 const today = new Date()
 const currentYear = today.getFullYear()
@@ -49,29 +51,31 @@ export default function Actu() {
         <div className="max-w-6xl mx-auto p-6 bg-white border-4 border-[#e0d6cb] rounded-2xl shadow-md flex flex-col gap-8 font-caveat">
           
           {/* Image */}
-          <div className="w-full rounded-2xl border-4 border-[#e0d6cb] shadow-lg overflow-hidden">
+          <motion.div className="w-full rounded-2xl border-4 border-[#e0d6cb] shadow-lg overflow-hidden" initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 1 }}>
             <img
               src={image}
               alt="Atelier de dessin"
               className="object-cover w-full max-h-[800px]"
             />
-          </div>
+          </motion.div>
 
           {/* Texte */}
           <div className="w-full text-gray-800 text-xl space-y-6">
-            <h1 className="text-center text-3xl font-bold text-gray-800">L'Actualité</h1>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 2 }}>
+              <h1 className="text-center text-3xl font-bold text-gray-800">L'Actualité</h1>
+              
+              <p className="text-center text-2xl font-semibold">
+                Saison {startYear}-{endYear}
+              </p>
+            </motion.div>
 
-            <p className="text-center text-2xl font-semibold">
-              Saison {startYear}-{endYear}
-            </p>
-
-            <div className="text-center space-y-2">
+            <motion.div className="text-center space-y-2" initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 4 }}>
               <p>Reprise des cours pour :</p>
               <ul className="list-disc list-inside">
                 <li>Les 8-10 ans : {formatDate(friday)}</li>
                 <li>Les 12-14 ans : {formatDate(thursday)}</li>
               </ul>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

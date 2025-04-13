@@ -39,7 +39,6 @@ export default function Header() {
             ☰
           </button>
         </div>
-
         {isMenuOpen && (
           <div className="lg:hidden w-full">
             <ul className="flex flex-col items-center gap-4 py-4">

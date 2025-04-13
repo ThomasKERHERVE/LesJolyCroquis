@@ -2,6 +2,8 @@ import Header from './Composants/Header'
 import Footer from './Composants/Footer'
 import image from '../assets/images/ibellulle.jpg'
 
+import { motion } from "framer-motion";
+
 export default function Accueil() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -13,15 +15,15 @@ export default function Accueil() {
           <div className="font-caveat flex flex-col justify-center items-center gap-12">
 
             {/* Titre */}
-            <div className="text-center mb-4">
+            <motion.div className="text-center mb-4 " initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 1 }}>
               <h1 className="text-4xl text-gray-800 mb-2 font-[Dancing_Script]">Atelier de dessin à Excideuil :</h1>
               <h2 className="text-5xl text-gray-800 font-[Dancing_Script]">Les Joly Croquis</h2>
-            </div>
+            </motion.div>
 
             <div className="flex flex-col md:flex-row items-center gap-12">
 
               {/* Texte à gauche */}
-              <div className="flex-1 text-center md:text-left">
+              <motion.div className="flex-1 text-center md:text-left" initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 2 }}>
                 <h1 className="text-2xl font-semibold text-gray-800 mb-6">
                   " Donnez vie à vos idées ! "
                 </h1>
@@ -34,10 +36,10 @@ export default function Accueil() {
                 <h1 className="text-2xl font-semibold text-gray-800 mb-6">
                   * Stages pour adultes souhaitant explorer et développer leurs talents
                 </h1>
-              </div>
+              </motion.div>
 
               {/* Image à droite */}
-              <div className="flex-1">
+              <motion.div className="flex-1" initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 2 }}>
                 <div className="rounded-2xl border-4 border-[#e0d6cb] shadow-lg overflow-hidden">
                   <img
                     src={image}
@@ -45,7 +47,7 @@ export default function Accueil() {
                     className="w-full h-auto object-cover"
                   />
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
 
