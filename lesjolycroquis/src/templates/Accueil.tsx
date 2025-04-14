@@ -25,16 +25,13 @@ export default function Accueil() {
               {/* Texte à gauche */}
               <motion.div className="flex-1 text-center md:text-left" initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 2 }}>
                 <h1 className="text-2xl font-semibold text-gray-800 mb-6">
-                  " Donnez vie à vos idées ! "
+                  Cours de dessin pour stimuler la créativité des enfants et des adolescents
                 </h1>
                 <h1 className="text-2xl font-semibold text-gray-800 mb-6">
-                  * Cours de dessin pour stimuler la créativité des enfants et des adolescents
+                  Ateliers d'éveil artistique pour les très jeunes enfants
                 </h1>
                 <h1 className="text-2xl font-semibold text-gray-800 mb-6">
-                  * Ateliers d'éveil artistique pour les très jeunes enfants
-                </h1>
-                <h1 className="text-2xl font-semibold text-gray-800 mb-6">
-                  * Stages pour adultes souhaitant explorer et développer leurs talents
+                  Stages pour adultes souhaitant explorer et développer leurs talents
                 </h1>
               </motion.div>
 
@@ -44,7 +41,7 @@ export default function Accueil() {
                   <img
                     src={image}
                     alt="Cours de dessin"
-                    className="w-full h-auto object-cover"
+                    className="w-full h-auto object-cover  max-h-[500px]"
                   />
                 </div>
               </motion.div>
