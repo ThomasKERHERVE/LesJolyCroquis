@@ -5,7 +5,8 @@ export default {
   ],
   theme: {
     extend: { fontFamily: {
-      caveat: ['Caveat', 'cursive'],
+        sans: ['"Quicksand"', 'sans-serif'],
+        caveat: ['Caveat', 'cursive'],
       },
     },
   },

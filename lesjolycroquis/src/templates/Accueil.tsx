@@ -9,10 +9,10 @@ export default function Accueil() {
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <section className="flex-1 bg-[#e7fcfd] px-4 py-12">
+      <section className="font-caveat flex-1 bg-[#e7fcfd] px-4 py-12">
         <div className="max-w-6xl mx-auto p-8 bg-white border-4 border-[#e0d6cb] rounded-2xl shadow-xl">
 
-          <div className="font-caveat flex flex-col justify-center items-center gap-12">
+          <div className="flex flex-col justify-center items-center gap-12">
 
             {/* Titre */}
             <motion.div className="text-center mb-4 " initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 1 }}>
@@ -25,13 +25,13 @@ export default function Accueil() {
               {/* Texte à gauche */}
               <motion.div className="flex-1 text-center md:text-left" initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 2 }}>
                 <h1 className="text-2xl font-semibold text-gray-800 mb-6">
-                  Cours de dessin pour stimuler la créativité des enfants et des adolescents
+                 Des cours de dessin pour stimuler la créativité des enfants et des adolescents
                 </h1>
                 <h1 className="text-2xl font-semibold text-gray-800 mb-6">
-                  Ateliers d'éveil artistique pour les très jeunes enfants
+                  Des ateliers d'éveil artistique pour les très jeunes enfants
                 </h1>
                 <h1 className="text-2xl font-semibold text-gray-800 mb-6">
-                  Stages pour adultes souhaitant explorer et développer leurs talents
+                  Des stages pour adultes souhaitant explorer et développer leurs talents
                 </h1>
               </motion.div>
 

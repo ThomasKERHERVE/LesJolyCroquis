@@ -30,7 +30,7 @@ export default function Header() {
           ))}
         </div>
 
-        {/* Test Sur Téléphone */}
+        {/* Test pour adapté sur Téléphone */}
         <div className="lg:hidden w-full">
           <button
             className="mx-auto text-2xl"
