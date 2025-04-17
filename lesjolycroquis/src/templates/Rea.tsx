@@ -22,14 +22,14 @@ export default function Realisations() {
           <h1 className="text-center text-4xl font-bold mb-10 font-caveat">Les Réalisations</h1>
           <div className="columns-1 sm:columns-2 lg:columns-3 gap-6">
 
-            <RealisationCard image={im1} description={'Réalisation de Andréa à l\'aquarell'}/>
+            <RealisationCard image={im1} description={'Réalisation de Andréa à l\'aquarelle'}/>
             <RealisationCard image={im2} description={'Réalisation de Elza au fusain / graphite '}/>
             <RealisationCard image={im3} description={'Réalisation de Flora à l\'acrylique'}/>
             <RealisationCard image={im4} description={'Réalisation de Léonie'}/>
-            <RealisationCard image={im5} description={'Réalisation de Lina à l\'aquarell'}/>
+            <RealisationCard image={im5} description={'Réalisation de Lina à l\'aquarelle'}/>
             <RealisationCard image={im6} description={'Réalisation de Margot à l\'acrylique'}/>
-            <RealisationCard image={im7} description={'Réalisation de Flora à la gouache et au pastel sec'}/>
-            <RealisationCard image={im8} description={'Réalisation de la technique du quadriallage'}/>
+            <RealisationCard image={im7} description={'Réalisation de Flora à la gouache et aux pastels secs'}/>
+            <RealisationCard image={im8} description={'Technique du quadriallage'}/>
 
           </div>
         </div>

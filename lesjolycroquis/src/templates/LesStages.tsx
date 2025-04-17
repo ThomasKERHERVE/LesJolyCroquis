@@ -32,7 +32,7 @@ export default function LesStages() {
                 Des stages seront proposés en cours d'année s'adressant aux jeunes à partir de 16 ans ainsi qu'aux adultes.
               </p>
               <p>
-                Des thèmes précis seront abordés avec quelque fois l'intervention de professionnels spécialisés dans un domaine particulier. ( Le portrait aux pastels, le regard...)
+                Des thèmes précis seront abordés avec quelques fois l'intervention de professionnels spécialisés dans un domaine particulier. ( Le portrait aux pastels, le regard...)
               </p>
               <p>
                 Les tarifs varieront en fonction de la durée, de l'intervenant, l'envie de séjouner sur place.
