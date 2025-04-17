@@ -44,7 +44,7 @@ export default function LesCours() {
             </motion.div>
 
             <motion.div className="space-y-2" initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 7 }}>
-              <p className="font-semibold">Cours particulier</p>
+              <p className="font-semibold">Cours particuliers</p>
             </motion.div>
           </div>
 
