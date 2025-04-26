@@ -7,7 +7,7 @@ export default function Footer() {
           </p>
           <div className="flex font-caveat space-x-6">
             <a>
-              Catherine Moutault
+              Catherine JOLY MOUTAULT
             </a>
           </div>
         </div>

@@ -76,6 +76,11 @@ export default function Actu() {
                 <li>Les 12-14 ans : {formatDate(thursday)}</li>
               </ul>
             </motion.div>
+
+            <motion.div className="text-center space-y-2" initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 5 }}>
+              <br/>
+              <h1 className="text-center space-y-2 italic">Les inscriptions seront bientôt possible pour la saison prochaine</h1>
+            </motion.div>
           </div>
         </div>
       </section>
