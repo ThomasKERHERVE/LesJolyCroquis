@@ -37,7 +37,7 @@ export default function Contact() {
           </h1>
 
           <p>
-            Ayant quitté récemment l’Education Nationale où j’étais directrice d’école dans le primaire puis professeur de lettres dans le secondaire , je suis retournée à ma première passion : le dessin.
+            Ayant quitté récemment l’Education Nationale où j’étais directrice d’école dans le primaire puis professeur de lettres dans le secondaire , je suis retournée à ma première passion : <br/>le dessin.
           </p>
           <p>
             En effet, toute jeune je suivais les cours du soir aux Beaux Arts en région parisienne tout en m’engageant dans l’enseignement en parallèle.
@@ -54,10 +54,6 @@ export default function Contact() {
             alt="Portrait"
             className="w-48 h-48 rounded-full border-4 border-[#e0d6cb] shadow-lg object-cover"
           />
-        </motion.div>
-
-        <motion.div className="flex justify-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 3 }}>
-          <h1 className="text-center text-3xl font-bold text-gray-800 font-caveat">Catherine Moutault</h1>
         </motion.div>
 
         {/* Les trois boxs */}
