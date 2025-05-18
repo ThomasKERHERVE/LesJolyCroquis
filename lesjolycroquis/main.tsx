@@ -1,7 +1,8 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';  // Importer Routes et Route
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
+
 import Accueil from './src/templates/Accueil';
 import LesCours from './src/templates/LesCours';
 import Contact from './src/templates/Contact';
@@ -12,7 +13,7 @@ import Realisations from './src/templates/Rea';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/LesCours" element={<LesCours />} />
@@ -22,6 +23,6 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/Atelier" element={<Atelier />} />
         <Route path="/Realisations" element={<Realisations />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );
