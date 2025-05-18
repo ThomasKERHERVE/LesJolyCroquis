@@ -12,7 +12,7 @@ import Realisations from './src/templates/Rea';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename="/LesJolyCroquis">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/LesCours" element={<LesCours />} />
