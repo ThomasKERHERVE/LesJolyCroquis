@@ -12,35 +12,6 @@ const currentMonth = today.getMonth() + 1
 const startYear = currentMonth >= 9 ? currentYear : currentYear - 1
 const endYear = startYear + 1
 
-// Trouver le lundi de la 3ᵉ semaine complète de septembre
-function getWeekStart(year: number, targetWeek: number) {
-  const september = new Date(year, 8, 1) // Mois 8 = septembre
-  let day = september.getDay()
-  let offset = (day === 0 ? 1 : 8 - day) // Décale au lundi suivant si le 1er n'est pas un lundi
-
-  // Premier lundi complet
-  const firstMonday = new Date(year, 8, 1 + offset)
-
-  // Lundi de la nᵉ semaine complète
-  const monday = new Date(firstMonday)
-  monday.setDate(monday.getDate() + (targetWeek - 1) * 7)
-  return monday
-}
-
-// Lundi de la 3ᵉ semaine complète de septembre
-const mondayOfThirdWeek = getWeekStart(startYear, 3)
-
-// Jeudi & Vendredi de cette semaine
-const thursday = new Date(mondayOfThirdWeek)
-thursday.setDate(thursday.getDate() + 3)
-
-const friday = new Date(mondayOfThirdWeek)
-friday.setDate(friday.getDate() + 4)
-
-
-
-const formatDate = (date: Date) =>
-  `${date.getDate()} ${date.toLocaleString('fr-FR', { month: 'long' })} ${date.getFullYear()} à ${date.getDay() === 4 ? '17h30' : '16h30'}`
 
 export default function Actu() {
   return (
@@ -70,16 +41,7 @@ export default function Actu() {
             </motion.div>
 
             <motion.div className="text-center space-y-2" initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 4 }}>
-              <p>Reprise des cours pour :</p>
-              <ul className="list-disc list-inside">
-                <li>Les 8-10 ans : {formatDate(friday)}</li>
-                <li>Les 12-14 ans : {formatDate(thursday)}</li>
-              </ul>
-            </motion.div>
-
-            <motion.div className="text-center space-y-2" initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 5 }}>
-              <br/>
-              <h1 className="text-center space-y-2 italic">Les inscriptions seront bientôt possible pour la saison prochaine</h1>
+              <p>Reprise des cours la semaine du 22 septembre {currentYear} :</p>
             </motion.div>
           </div>
         </div>

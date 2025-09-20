@@ -24,8 +24,8 @@ export default function LesCours() {
             </motion.div>
 
             <motion.div className="space-y-4 border-b pb-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 3 }}>
-              <p className="font-semibold">6 à 7 ans :</p>
-              <p>Le mercredi après-midi<br/>Max 8 enfants<br/>210€ l’année scolaire</p>
+              <p className="font-semibold">Tout âge :</p>
+              <p>Le mercredi de 15h00 à 16h30<br/>Max 8 enfants<br/>210€ l’année scolaire</p>
             </motion.div>
 
             <motion.div className="space-y-4 border-b pb-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 4 }}>
@@ -35,12 +35,12 @@ export default function LesCours() {
 
             <motion.div className="space-y-4 border-b pb-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 5 }}>
               <p className="font-semibold">12 à 15 ans :</p>
-              <p>Le jeudi de 17h30 à 19h00<br/>Max 8 jeunes<br/>210€ l’année scolaire</p>
+              <p>Le mardi de 15h30 à 19h00<br/>Max 8 jeunes<br/>210€ l’année scolaire</p>
             </motion.div>
 
             <motion.div className="space-y-4 border-b pb-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 6 }}>
               <p className="font-semibold">À partir de 16 ans et adultes :</p>
-              <p>Le samedi après-midi ou sous forme de stage</p>
+              <p>Le samedi de 10h30 à 12h00 une semaine sur deux ou sous forme de stage</p>
             </motion.div>
 
             <motion.div className="space-y-2" initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 7 }}>
