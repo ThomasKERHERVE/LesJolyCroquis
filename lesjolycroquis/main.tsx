@@ -26,3 +26,6 @@ createRoot(document.getElementById('root')!).render(
     </HashRouter>
   </StrictMode>
 );
+
+// npm run deploy
+// Pour mettre à jour le site
