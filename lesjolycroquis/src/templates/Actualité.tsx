@@ -41,7 +41,7 @@ export default function Actu() {
             </motion.div>
 
             <motion.div className="text-center space-y-2" initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 4 }}>
-              <p>Reprise des cours la semaine du 22 septembre {currentYear} :</p>
+              <p>Reprise des cours la semaine du 22 septembre {currentYear}</p>
             </motion.div>
           </div>
         </div>
