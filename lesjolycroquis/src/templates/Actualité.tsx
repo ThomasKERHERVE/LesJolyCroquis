@@ -1,16 +1,10 @@
 import Header from './Composants/Header'
 import Footer from './Composants/Footer'
 import image from '../assets/images/Désert.jpg'
+import ArtThe from '../assets/images/ArtTherapie.jpeg'
 
 import { motion } from "framer-motion";
-
-// Année scolaire dynamique
-const today = new Date()
-const currentYear = today.getFullYear()
-const currentMonth = today.getMonth() + 1
-
-const startYear = currentMonth >= 9 ? currentYear : currentYear - 1
-const endYear = startYear + 1
+import RealisationCard from './Composants/RealisationCard';
 
 
 export default function Actu() {
@@ -34,14 +28,31 @@ export default function Actu() {
           <div className="w-full text-gray-800 text-xl space-y-6">
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 2 }}>
               <h1 className="text-center text-3xl font-bold text-gray-800">L'Actualité</h1>
-              
+              <br></br>
               <p className="text-center text-2xl font-semibold">
-                Saison {startYear}-{endYear}
+                Saison 2025-2026
               </p>
-            </motion.div>
 
-            <motion.div className="text-center space-y-2" initial={{ opacity: 0 }} animate={{ opacity: 1 }}transition={{ duration: 4 }}>
-              <p>Reprise des cours la semaine du 22 septembre {currentYear}</p>
+              <div className="text-center space-y-2">
+                <p>Reprise des cours la semaine du 22 septembre {2025}</p>
+              </div>
+              <br></br>
+
+              <p className="text-center text-2xl font-semibold">
+                  Saison 2026-2027
+              </p>
+              <div className="text-center space-y-2">
+                Année en parenthèse
+                <br></br>
+                Formation en Art Thérapie :
+              </div>
+              <div className="w-1/2 mx-auto rounded-2xl border-4 border-[#e0d6cb] shadow-md overflow-hidden">
+                <img
+                  src={ArtThe}
+                  alt="Cours de dessin"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
             </motion.div>
           </div>
         </div>
