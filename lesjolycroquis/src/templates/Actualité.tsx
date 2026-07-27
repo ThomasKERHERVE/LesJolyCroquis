@@ -4,8 +4,6 @@ import image from '../assets/images/Désert.jpg'
 import ArtThe from '../assets/images/ArtTherapie.jpeg'
 
 import { motion } from "framer-motion";
-import RealisationCard from './Composants/RealisationCard';
-
 
 export default function Actu() {
   return (
